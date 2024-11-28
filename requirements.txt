@@ -1,0 +1,6 @@
+pyrofork==2.3.40
+tgcrypto
+pymongo
+uvloop
+cloudscraper
+aiohttp
