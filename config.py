@@ -2,7 +2,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 import os
 
-PORT = "8080"
+PORT = 8080
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN" , "")
 
