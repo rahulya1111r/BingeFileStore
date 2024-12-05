@@ -35,7 +35,7 @@ DISABLE_CHANNEL_BUTTON = True
 
 SHORTENER_API = os.environ.get("SHORTENER_API" , "")
 
-SHORTENER_SITE = "publicearn.in"
+SHORTENER_SITE = "gyanilinks.com"
 
 HOW_TO_DOWNLOAD = "https://telegram.me/How_To_Download_From_Linkz/4"
 
