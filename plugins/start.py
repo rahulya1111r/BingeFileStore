@@ -131,9 +131,9 @@ Pᴀʏᴍᴇɴᴛs Cᴀɴ Bᴇ Mᴀᴅᴇ Sᴇᴄᴜʀᴇʟʏ Tʜʀᴏᴜɢʜ O�
                 await temp_msg.edit_text("<b>Sᴏᴍᴇᴛʜɪɴɢ Wᴇɴᴛ Wʀᴏɴɢ Pʟᴇᴀsᴇ Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ..!</b>")
                 return await sync()
             await temp_msg.delete()
-            if "#Sample_Video" not in (messages[0].text or messages[0].caption) and message.from_user.id not in ADMINS:
-                status = await handle_token(app , message , base64_string)
-                if status: return
+            #if "#Sample_Video" not in (messages[0].text or messages[0].caption) and message.from_user.id not in ADMINS:
+            #    status = await handle_token(app , message , base64_string)
+            #    if status: return
             if not messages: return await sync()
             for msg in messages:
                 if bool(CUSTOM_CAPTION) & bool(msg.document or msg.video):
