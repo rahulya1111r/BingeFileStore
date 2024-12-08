@@ -133,4 +133,4 @@ async def short_url(longurl):
     shorted = res['shortenedUrl']
     return shorted"""
     string = await encode(longurl)
-    return f"https://acelink.me/#?url={string}"
+    return f"https://www.acelink.me/#?url={string}"
