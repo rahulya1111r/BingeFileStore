@@ -132,5 +132,5 @@ async def short_url(longurl):
     res = cget('GET', f'https://{SHORTENER_SITE}/api?api={SHORTENER_API}&url={quote(longurl)}').json()
     shorted = res['shortenedUrl']
     return shorted"""
-    string = await encode(longurl)
+    string = await encode('https://href.li/?'+longurl)
     return f"https://www.acelink.me/#?url={string}"
