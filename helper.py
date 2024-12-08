@@ -133,9 +133,7 @@ async def encd(string):
     return base64_bytes.decode('utf-8')
 
 async def short_url(longurl):
-    """cget = create_scraper().request
+    cget = create_scraper().request
     res = cget('GET', f'https://{SHORTENER_SITE}/api?api={SHORTENER_API}&url={quote(longurl)}').json()
     shorted = res['shortenedUrl']
-    return shorted"""
-    string = await encd('https://href.li/?'+longurl)
-    return f"https://www.acelink.me/#?url={string}"
+    return shorted
