@@ -128,7 +128,9 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 async def short_url(longurl):
-    cget = create_scraper().request
+    """cget = create_scraper().request
     res = cget('GET', f'https://{SHORTENER_SITE}/api?api={SHORTENER_API}&url={quote(longurl)}').json()
     shorted = res['shortenedUrl']
-    return shorted
+    return shorted"""
+    string = await encode(longurl)
+    return f"https://murdocks-blog.blogspot.com/#?url={string}"
