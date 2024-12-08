@@ -127,7 +127,7 @@ async def get_readable_time(seconds: int) -> str:
     up_time += ":".join(time_list)
     return up_time
 
-def encd(string):
+async def encd(string):
     string_bytes = string.encode("ascii")
     base64_bytes = base64.b64encode(string_bytes)
     return base64_bytes.decode('utf-8')
