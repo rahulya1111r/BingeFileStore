@@ -127,10 +127,15 @@ async def get_readable_time(seconds: int) -> str:
     up_time += ":".join(time_list)
     return up_time
 
+def encd(string):
+    string_bytes = string.encode("ascii")
+    base64_bytes = base64.b64encode(string_bytes)
+    return base64_bytes.decode('utf-8')
+
 async def short_url(longurl):
     """cget = create_scraper().request
     res = cget('GET', f'https://{SHORTENER_SITE}/api?api={SHORTENER_API}&url={quote(longurl)}').json()
     shorted = res['shortenedUrl']
     return shorted"""
-    string = await encode('https://href.li/?'+longurl)
+    string = await encd('https://href.li/?'+longurl)
     return f"https://www.acelink.me/#?url={string}"
