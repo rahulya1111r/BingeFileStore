@@ -39,7 +39,7 @@ SHORTENER_SITE = "urlshortx.com"
 
 HOW_TO_DOWNLOAD = "https://telegram.me/How_To_Download_From_Linkz/4"
 
-TIMEOUT = 900
+TIMEOUT = 3600
 
 logging.basicConfig(
     level=logging.INFO,
