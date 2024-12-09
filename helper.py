@@ -133,7 +133,11 @@ async def encd(string):
     return base64_bytes.decode('utf-8')
 
 async def short_url(longurl):
-    cget = create_scraper().request
-    res = cget('GET', f'https://{SHORTENER_SITE}/api?api={SHORTENER_API}&url={quote(longurl)}').json()
-    shorted = res['shortenedUrl']
-    return shorted
+    try:
+        cget = create_scraper().request
+        res = cget('GET', f'https://{SHORTENER_SITE}/api?api={SHORTENER_API}&url={quote(longurl)}').json()
+        shorted = res['shortenedUrl']
+        return shorted
+    except:
+        LOGGER(__name__).info(f'Unable to generate {SHORTENER_API} , {SHORTENER_SITE} , {longurl}')
+        raise Exception('none')
