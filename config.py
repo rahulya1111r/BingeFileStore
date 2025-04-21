@@ -22,7 +22,7 @@ DB_URI = os.environ.get( "DB_URI" , "")
 
 DB_NAME = "binge"
 
-FSUB_CHANNEL = -1001924763706
+FSUB_CHANNEL = -1002546390597
 
 CUSTOM_CAPTION = '''<b>{previouscaption}
 
