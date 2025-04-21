@@ -12,7 +12,7 @@ API_HASH = os.environ.get( "API_HASH" , "")
 
 CHANNEL_ID = -1001945210884
 
-OWNER = [6389186248]
+OWNER = [7849937720]
 
 ADMINS = []
 
