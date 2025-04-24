@@ -10,9 +10,9 @@ API_ID = os.environ.get("API_ID" , "")
 
 API_HASH = os.environ.get( "API_HASH" , "")
 
-CHANNEL_ID = -1001945210884
+CHANNEL_ID = -1002676767531
 
-OWNER = [7849937720]
+OWNER = [6265774493]
 
 ADMINS = []
 
@@ -22,7 +22,7 @@ DB_URI = os.environ.get( "DB_URI" , "")
 
 DB_NAME = "binge"
 
-FSUB_CHANNEL = -1002546390597
+FSUB_CHANNEL = 0
 
 CUSTOM_CAPTION = '''<b>{previouscaption}
 
